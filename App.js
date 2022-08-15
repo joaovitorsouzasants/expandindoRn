@@ -1,21 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { View, Text, Image } from "react-native";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  return (
+    <View>
+      <Text>olá mundo</Text>
+      <Logo Largura={150} Altura={150} Fulano="Fulano Oliveira"/>
+    </View >
+  );
+};
+
+function Logo(props){
+let img = 'https://github.com/joaovitorsouzasants.png';
+
+return(
+  <View>
+  <Image source={{uri: img}} style={{ width:props.Largura, height:props.Altura}}/>
+  <Text>{props.Fulano}</Text>
+  </View>
+);
+
+};
