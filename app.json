@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "expandindoRn",
+    "slug": "expandindoRn",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
